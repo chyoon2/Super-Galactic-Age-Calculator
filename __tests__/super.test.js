@@ -39,6 +39,12 @@ describe('Demographic class', () => {
     expect(user2.lifeExpectancy).toEqual(80);
   });
 
+  test('should return yearsRemaining which is lifeExpectancy minus inputAge', () => {
+    let user2 = new Demographic(30, "Male", "Latinx");
+    user2.calculateLifeExpectancy();
+    expect(user2.yearsRemaining).toBe(10);
+  });
+
   test('should return yearsExtended which is inputAge minus lifeExpectancy', () => {
     let user2 = new Demographic(90, "Male", "Latinx");
     user2.calculateLifeExpectancy();
