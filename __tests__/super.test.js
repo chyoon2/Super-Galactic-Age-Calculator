@@ -10,7 +10,7 @@ describe('Age and Demographic classes', () => {
     expect(user1).toMatchObject({inputAge: 30});
   });
 
-  test('should output a planet adjusted age', () => {
+  test('should push a planet adjusted age into a object.planetAge Array', () => {
     const user1 = new Age(30);
     user1.planet();
     expect(user1.planetAge).toContain(125);
@@ -27,5 +27,17 @@ describe('Age and Demographic classes', () => {
   test('should create objects with demographic properties', () => { 
     let user2 = new Demographic(30, "Male", "Hispanic/Latinx");
     expect(user2).toMatchObject({inputAge: 30, sex: "Male", race: "Hispanic/Latinx"});
+  });
+
+  test('should return a lifeExpectancy', () => {
+    let user2 = new Demographic(30, "Male", "Hispanic/Latinx");
+    user2.calculateLifeExpectancy;
+    expect(user2.lifeExpectancy).toBe(80);
+  });
+
+  test('should return yearsRemaining which is inputAge minus lifeExpectancy', () => {
+    let user2 = new Demographic(30, "Male", "Hispanic/Latinx");
+    user2.calculateYearsRemaining;
+    expect(user2.yearsRemaining).toBe(50);
   });
 });
