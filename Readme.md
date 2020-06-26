@@ -19,17 +19,17 @@
 
 ## Specs
 
-Behavior: The Program will collect the user inputs age.
+* Behavior: The Program will collect the user inputs age.
 Input: "30"
 Output: N/A 
 
-Behavior: The Program will only accept numeric inputs for the age.
+* Behavior: The Program will only accept numeric inputs for the age.
 Input: "thirty"
 Output: "Please use numeric characters"
 
-Behavior: The Program will calculate the age of user by the every planet.
+* Behavior: The Program will calculate the age of user by the every planet.
 Input: "30"
-Output: "Mercury: 125 Venus:48 Mars: 16 Jupiter: 3 
+Output: "Mercury: 125 Venus: 48 Mars: 16 Jupiter: 3"
 
 Behavior: The program collects users demographic information. 
 Input: "Sex: M Race: Hispanic/Lainx" 
