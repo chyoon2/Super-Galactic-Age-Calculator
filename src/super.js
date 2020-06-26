@@ -23,25 +23,25 @@ export class Demographic extends Age {
     super(inputAge);
     this.sex = sex;
     this.ethnicity = ethnicity;
+    
   }
 
   calculateLifeExpectancy () {
-    let lifeExpectancy = 80;
+    this.lifeExpectancy = 80;
     if (this.sex === "Male") {
-      lifeExpectancy -= 10;
+      this.lifeExpectancy -= 10;
     }
     if (this.ethnicity === "Latinx")  {
-      lifeExpectancy += 10;
+      this.lifeExpectancy += 10;
     } else if (this.ethnicity === "Asian")  {
-      lifeExpectancy += 10; 
+      this.lifeExpectancy += 10; 
     } else if (this.ethnicity === "Hawaiin & Pacific Islander")  {
-      lifeExpectancy += 9;
+      this.lifeExpectancy += 9;
     } else if (this.ethnicity === "White")  {
-      lifeExpectancy += 9;
+      this.lifeExpectancy += 9;
     } else {
-      lifeExpectancy += 9;
+      this.lifeExpectancy += 9;
     }
-      console.log(lifeExpectancy);
-    return lifeExpectancy;
   }
+  
 }
