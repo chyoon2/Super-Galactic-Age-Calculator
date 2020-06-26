@@ -19,6 +19,6 @@ describe('Age', () => {
   });
   test('check if inputAge is a number', () => {
     const user1 = new Age("not a number");
-    expect(user1.isNumber).toBe(false);
+    expect(user1.isNumber()).toBe(true);
   });
 });

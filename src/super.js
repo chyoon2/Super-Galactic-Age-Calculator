@@ -4,10 +4,17 @@ export class Age {
     this.planetAge = [];
   }
 
+  isNumber() {
+      if (isNaN(this.inputAge)) {
+        return true;
+      }
+    }
+
   planet() {
     let planetYear = [.24, .62, 1.88, 11.86];
     for(let time of planetYear){
-    this.planetAge.push(Math.round(this.inputAge / time));
+      this.planetAge.push(Math.round(this.inputAge / time));
     }
   }
 }
+  
