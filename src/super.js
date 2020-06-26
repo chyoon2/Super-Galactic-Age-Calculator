@@ -42,6 +42,12 @@ export class Demographic extends Age {
     } else {
       this.lifeExpectancy += 9;
     }
+    this.calculateYearsRemaining();
   }
-  
+  calculateYearsRemaining() {
+    this.yearsRemaining = 0;
+    if (this.inputAge > this.lifeExpectancy){
+      this.yearsRemaining = this.inputAge - this.lifeExpectancy;
+    }
+  }
 }
