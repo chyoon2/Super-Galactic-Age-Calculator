@@ -17,9 +17,8 @@ devServer: {
 plugins: [
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(),
-  // new Dotenv(),
   new HtmlWebpackPlugin({
-    title: 'My Project',
+    title: 'Super Galactic Age Calculator',
     template: './src/index.html',
     inject: 'body'
   })
