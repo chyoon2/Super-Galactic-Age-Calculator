@@ -1,8 +1,8 @@
 {
-  "name": "Super Galactic Age Calculator",
+  "name": "super",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "program determines age on varying planets",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development",
@@ -11,14 +11,14 @@
     "debug": "node --inspect-brk node_modules/jest/bin/jest.js --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Yoon",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "^3.2.0",
-    "eslint": "^6.3.0",
+    "eslint": "^6.8.0",
     "eslint-loader": "^3.0.0",
     "file-loader": "^1.1.6",
     "html-loader": "^0.5.5",
