@@ -1,10 +1,8 @@
 import { Age } from './../src/super.js';
 
-describe('Age class', () => {
-let reusableAge;
+describe('Age', () => {
 
   beforeEach(() => {
-    reusableAge = new Age();
   });
 
   test('should create a new age object', () => {
@@ -13,7 +11,8 @@ let reusableAge;
   });
   test('should output a planet adjusted age', () => {
     const user1 = new Age(30);
-    Age.planet();
-    expect(Age.planetAge).toContain({30});
+    user1.planet();
+    expect(user1.planetAge).toContain(125);
+
   });
 });
