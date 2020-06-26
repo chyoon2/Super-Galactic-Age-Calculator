@@ -11,8 +11,8 @@ export class Age {
 
   planet() {
     this.planetAge = [];
-    let planetYear = [.24, .62, 1.88, 11.86];
-    for(let time of planetYear){
+    this.planetYear = [1, .24, .62, 1.88, 11.86];
+    for(let time of this.planetYear){
       this.planetAge.push(Math.round(this.inputAge / time));
     }
   }
