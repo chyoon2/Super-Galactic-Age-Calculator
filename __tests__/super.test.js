@@ -22,7 +22,7 @@ describe('Age and Demographic classes', () => {
     expect(user1.isNumber()).toBe(true);
   });
   test('should create objects with demographic properties', () => {
-    const user1 = new Demographic(30, "Male", "Hispanic/Latinx");
-    expect(user1).toMatchObject({inputAge: 30, Sex: "Male", Race: "Hispanic/LatinX"});
+    const user1 = new Demographic("Male", "Hispanic/Latinx");
+    expect(user1).toMatchObject({sex: "Male", race: "Hispanic/Latinx"});
   })
 });
