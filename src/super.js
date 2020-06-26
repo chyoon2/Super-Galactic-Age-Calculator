@@ -18,10 +18,11 @@ export class Age {
   }
 }
 
-export class Demographic {
-  constructor(sex, race) {
-   this.sex = sex;
-   this.race = race;
+export class Demographic extends Age {
+  constructor(inputAge, sex, race) {
+    super(inputAge);
+    this.sex = sex;
+    this.race = race;
   }
 }
 
