@@ -23,7 +23,6 @@ export class Demographic extends Age {
     super(inputAge);
     this.sex = sex;
     this.ethnicity = ethnicity;
-    
   }
 
   calculateLifeExpectancy () {
@@ -48,14 +47,11 @@ export class Demographic extends Age {
       this.calculateYearsRemaining();
     }
   }
-
   calculateYearsRemaining() {
-    this.yearsRemaining = 0;
     this.yearsRemaining = this.lifeExpectancy - this.inputAge;
   }
 
   calculateYearsExtended() {
-    this.yearsExtended = 0;
     this.yearsExtended = this.inputAge - this.lifeExpectancy;
   }
 }
