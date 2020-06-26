@@ -43,19 +43,19 @@ export class Demographic extends Age {
       this.lifeExpectancy += 9;
     }
     if (this.inputAge > this.lifeExpectancy){
-    this.calculateYearsRemaining();
+      this.calculateYearsExtended();
+    } else {
+      this.calculateYearsRemaining();
     }
   }
-  calculateYearsExtended() {
-    this.yearsExtended = 0;
-    if (this.inputAge > this.lifeExpectancy){
-      this.yearsExtended = this.inputAge - this.lifeExpectancy;
-    }
+
+  calculateYearsRemaining() {
+    this.yearsRemaining = 0;
+    this.yearsRemaining = this.lifeExpectancy - this.inputAge;
   }
+
   calculateYearsExtended() {
     this.yearsExtended = 0;
-    if (this.inputAge > this.lifeExpectancy){
-      this.yearsExtended = this.inputAge - this.lifeExpectancy;
-    }
+    this.yearsExtended = this.inputAge - this.lifeExpectancy;
   }
 }
