@@ -1,12 +1,11 @@
-import { Age, Demographic } from './../src/super.js';
+import { Age } from './../src/super.js';
+import { Demographic } from './../src/demographic.js';
 
 describe('Age class', () => {
 
-  beforeEach(() => {
-  });
-
   test('should create a new age object', () => {
     const user1 = new Age(30);
+    user1.planet();
     expect(user1).toMatchObject({inputAge: 30});
   });
 
@@ -23,7 +22,6 @@ describe('Age class', () => {
     const user1 = new Age("not a number");
     expect(user1.isNumber()).toBe(true);
   });
-
 });
 
 describe('Demographic class', () => {
