@@ -13,6 +13,8 @@ describe('Age', () => {
     const user1 = new Age(30);
     user1.planet();
     expect(user1.planetAge).toContain(125);
-
+    expect(user1.planetAge).toContain(48);
+    expect(user1.planetAge).toContain(16);
+    expect(user1.planetAge).toContain(3);
   });
 });

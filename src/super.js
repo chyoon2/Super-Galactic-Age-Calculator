@@ -5,10 +5,9 @@ export class Age {
   }
 
   planet() {
-    this.planetAge.push(this.inputAge / .24);
-    this.planetAge.push(this.inputAge / .62);
-    this.planetAge.push(this.inputAge / 1.88);
-    this.planetAge.push(this.inputAge / 11.86);
-    
+    let planetYear = [.24, .62, 1.88, 11.86];
+    for(let time of planetYear){
+    this.planetAge.push(Math.round(this.inputAge / time));
+    }
   }
 }
