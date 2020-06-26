@@ -28,20 +28,20 @@ describe('Age class', () => {
 
 describe('Demographic class', () => {
 
-test('should create objects with demographic properties', () => { 
-  let user2 = new Demographic(30, "Male", "Latinx");
-  expect(user2).toMatchObject({inputAge: 30, sex: "Male", ethnicity: "Latinx"});
-});
+  test('should create objects with demographic properties', () => { 
+    let user2 = new Demographic(30, "Male", "Latinx");
+    expect(user2).toMatchObject({inputAge: 30, sex: "Male", ethnicity: "Latinx"});
+  });
 
-test('should return a lifeExpectancy', () => {
-  let user2 = new Demographic(30, "Male", "Latinx");
-  user2.calculateLifeExpectancy();
-  expect(user2.lifeExpectancy).toEqual(80);
-});
+  test('should return a lifeExpectancy', () => {
+    let user2 = new Demographic(30, "Male", "Latinx");
+    user2.calculateLifeExpectancy();
+    expect(user2.lifeExpectancy).toEqual(80);
+  });
 
-test('should return yearsRemaining which is inputAge minus lifeExpectancy', () => {
-  let user2 = new Demographic(90, "Male", "Latinx");
-  user2.calculateLifeExpectancy();
-  expect(user2.yearsRemaining).toBe(10);
-});
+  test('should return yearsExtended which is inputAge minus lifeExpectancy', () => {
+    let user2 = new Demographic(90, "Male", "Latinx");
+    user2.calculateLifeExpectancy();
+    expect(user2.yearsExtended).toBe(10);
+  });
 });

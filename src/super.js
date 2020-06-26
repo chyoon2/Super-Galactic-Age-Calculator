@@ -42,12 +42,20 @@ export class Demographic extends Age {
     } else {
       this.lifeExpectancy += 9;
     }
-    this.calculateYearsRemaining();
-  }
-  calculateYearsRemaining() {
-    this.yearsRemaining = 0;
     if (this.inputAge > this.lifeExpectancy){
-      this.yearsRemaining = this.inputAge - this.lifeExpectancy;
+    this.calculateYearsRemaining();
+    }
+  }
+  calculateYearsExtended() {
+    this.yearsExtended = 0;
+    if (this.inputAge > this.lifeExpectancy){
+      this.yearsExtended = this.inputAge - this.lifeExpectancy;
+    }
+  }
+  calculateYearsExtended() {
+    this.yearsExtended = 0;
+    if (this.inputAge > this.lifeExpectancy){
+      this.yearsExtended = this.inputAge - this.lifeExpectancy;
     }
   }
 }
