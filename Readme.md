@@ -35,19 +35,23 @@ Input: "Sex: M Race: Hispanic/Lainx"
 Output: N/A
 
 * Behavior: The program calculates the remaining life expectancy depending on demographic.
+Input: "30 Sex: M Race: Hispanic/Lainx" 
+Output: N/A
+
+* Behavior: The program takes the remaining life expectancy and calculates the expectancy on each planet.
 Input: "Sex: M Race: Hispanic/Lainx" 
 Output: N/A
 
 * Behavior: The program takes the remaining life expectancy and calculates the remaining life expectancy on each planet.
-Input: "Age:30 Sex: M Race: Hispanic/Lainx" 
+Input: "30 Sex: M Race: Hispanic/Lainx" 
 Output: "Earth 30 Mercury: 455 Venus: 76 Mars: 25 Jupiter: 1"
 
 * Behavior: If the input age is greater than the life expectancy, the program calculates the number of years the user lived past the expectancy 
-Input: "100" "Sex: M Race: Hispanic/Lainx" 
+Input: "100 Sex: M Race: Hispanic/Lainx" 
 Output: NA
 
 * Behavior: The program calculates the number of years lived past the expectancy on each planet.
-Input: "Age:100 Sex: M Race: Hispanic/Lainx" 
+Input: "100 Sex: M Race: Hispanic/Lainx" 
 Output: "Earth 20 Mercury: 210 Venus: 25 Mars: 13 Jupiter: 2"
 
 
