@@ -4,11 +4,10 @@ export class Age {
   }
 
   isNumber() {
-      if (isNaN(this.inputAge)) {
-        return true;
-      }
+    if (isNaN(this.inputAge)) {
+      return true;
     }
-
+  }
   planet() {
     this.planetAge = [];
     this.planetYear = [1, .24, .62, 1.88, 11.86];
