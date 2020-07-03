@@ -24,7 +24,7 @@ describe('Age class', () => {
   });
 });
 
-describe('Demographic class', () => {
+describe('Demographic extended', () => {
 
   test('should create objects with demographic properties', () => { 
     let user2 = new Demographic(30, "Male", "Latinx");
@@ -48,4 +48,20 @@ describe('Demographic class', () => {
     user2.calculateLifeExpectancy();
     expect(user2.yearsExtended).toBe(10);
   });
+
+  test('should return an array with life expectancy on each planet', () => {
+    let user2 = new Demographic(90, "Male", "Latinx");
+    user2.calculateLifeExpectancy();
+    expect(user2.planetLifeExpectancy).toContain(0);
+    expect(user2.planetLifeExpectancy).toContain(19);
+    expect(user2.planetLifeExpectancy).toContain(50);
+    expect(user2.planetLifeExpectancy).toContain(949);
+  });
+  // // test('should return an array with years extended on each planet', () => {
+  //   let user2 = new Demographic(90, "Male", "Latinx");
+  //   expect(user2.planetYearsRemaining).toContain(125);
+  //   expect(user2.planetYearsRemaining).toContain(48);
+  //   expect(user2.planetYearsRemaining).toContain(16);
+  //   expect(user2.planetYearsRemaining).toContain(3);
+  // // });
 });
