@@ -57,11 +57,13 @@ describe('Demographic extended', () => {
     expect(user2.planetLifeExpectancy).toContain(129);
     expect(user2.planetLifeExpectancy).toContain(7);
   });
-  // // test('should return an array with years extended on each planet', () => {
-  //   let user2 = new Demographic(90, "Male", "Latinx");
-  //   expect(user2.planetYearsRemaining).toContain(125);
-  //   expect(user2.planetYearsRemaining).toContain(48);
-  //   expect(user2.planetYearsRemaining).toContain(16);
-  //   expect(user2.planetYearsRemaining).toContain(3);
-  // // });
+  test('should return an array with years remaining on each planet', () => {
+    let user2 = new Demographic(30, "Male", "Latinx");
+    user2.calculateLifeExpectancy();
+    user2.calculateYearsRemaining();
+    expect(user2.planetYearsRemaining).toContain(125);
+    expect(user2.planetYearsRemaining).toContain(48);
+    expect(user2.planetYearsRemaining).toContain(16);
+    expect(user2.planetYearsRemaining).toContain(3);
+  });
 });
