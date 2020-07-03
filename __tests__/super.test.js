@@ -57,7 +57,7 @@ describe('Demographic extended', () => {
     expect(user2.planetLifeExpectancy).toContain(129);
     expect(user2.planetLifeExpectancy).toContain(7);
   });
-  test('should return an array with years remaining on each planet', () => {
+  test('should return an array with years remaining on each planet if age is less than life expectancy', () => {
     let user2 = new Demographic(30, "Male", "Latinx");
     user2.calculateLifeExpectancy();
     user2.calculateYearsRemaining();
