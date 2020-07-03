@@ -28,7 +28,7 @@ Output: "Please use numeric characters"
 
 * Behavior: The Program will calculate the age of user by the every planet.
 Input: "30"
-Output: "Mercury: 125 Venus: 48 Mars: 16 Jupiter: 3"
+Output: "Earth 30 Mercury: 125 Venus: 48 Mars: 16 Jupiter: 3"
 
 * Behavior: The program collects users demographic information. 
 Input: "Sex: M Race: Hispanic/Lainx" 
@@ -38,13 +38,18 @@ Output: N/A
 Input: "Sex: M Race: Hispanic/Lainx" 
 Output: N/A
 
-* Behavior: The program outputs the remaining years until the user reaches life expectancy.
-Input: "Sex: M Race: Hispanic/Lainx" 
-Output: "You have are expected to live 50 more years.
+* Behavior: The program takes the remaining life expectancy and calculates the remaining life expectancy on each planet.
+Input: "Age:30 Sex: M Race: Hispanic/Lainx" 
+Output: "Earth 30 Mercury: 455 Venus: 76 Mars: 25 Jupiter: 1"
 
-* Behavior: If the input age is greater than the life expectancy, the program outputs the number of years the user lived past the expectancy 
+* Behavior: If the input age is greater than the life expectancy, the program calculates the number of years the user lived past the expectancy 
 Input: "100" "Sex: M Race: Hispanic/Lainx" 
-Output: "You have surpassed your life expectancy by 20 years.
+Output: NA
+
+* Behavior: The program calculates the number of years lived past the expectancy on each planet.
+Input: "Age:100 Sex: M Race: Hispanic/Lainx" 
+Output: "Earth 20 Mercury: 210 Venus: 25 Mars: 13 Jupiter: 2"
+
 
 ## Known Bugs
 
