@@ -61,9 +61,9 @@ describe('Demographic extended', () => {
     let user2 = new Demographic(30, "Male", "Latinx");
     user2.calculateLifeExpectancy();
     user2.calculateYearsRemaining();
-    expect(user2.planetYearsRemaining).toContain(125);
-    expect(user2.planetYearsRemaining).toContain(48);
-    expect(user2.planetYearsRemaining).toContain(16);
-    expect(user2.planetYearsRemaining).toContain(3);
+    expect(user2.planetYearsRemaining).toContain(50);
+    expect(user2.planetYearsRemaining).toContain(208);
+    expect(user2.planetYearsRemaining).toContain(81);
+    expect(user2.planetYearsRemaining).toContain(27);
   });
 });
