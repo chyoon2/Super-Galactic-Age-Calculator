@@ -70,9 +70,9 @@ describe('Demographic extended', () => {
     let user2 = new Demographic(90, "Male", "Latinx");
     user2.calculateLifeExpectancy();
     user2.calculateYearsExtended();
-    expect(user2.planetYearsExtended).toContain(50);
-    expect(user2.planetYearsExtended).toContain(208);
-    expect(user2.planetYearsExtended).toContain(81);
-    expect(user2.planetYearsExtended).toContain(27);
+    expect(user2.planetYearsExtended).toContain(5);
+    expect(user2.planetYearsExtended).toContain(10);
+    expect(user2.planetYearsExtended).toContain(42);
+    expect(user2.planetYearsExtended).toContain(1);
   });
 });
